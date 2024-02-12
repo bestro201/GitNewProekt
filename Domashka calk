@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static double add(double x, double y) {
+        return x + y;
+    }
+
+    public static double subtract(double x, double y) {
+        return x - y;
+    }
+
+    public static double multiply(double x, double y) {
+        return x * y;
+    }
+
+    public static double divide(double x, double y) {
+        if (y == 0) {
+            throw new IllegalArgumentException("На ноль делить нельзя");
+        }
+        return x / y;
+    }
+
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введіть перше число: ");
+        double number1 = scanner.nextInt();
+
+        System.out.print("Введіть друге число: ");
+        double number2 = scanner.nextInt();
+
+        System.out.print("Введіть операцію (+, -, *, /): ");
+        String operation = scanner.next();
+
+       double result;
+        switch (operation) {
+            case "+":
+                result = add(number1, number2);
+                break;
+            case "-":
+                result = subtract(number1, number2);
+                break;
+            case "*":
+                result = multiply(number1, number2);
+                break;
+            case "/":
+             result = divide(number1, number2);
+                break;
+            default:
+                System.out.println("Невідома операція");
+                return;
+        }
+
+        System.out.println("Результат: " + result);
+
+
+   scanner.close();
+    }
+}
+
