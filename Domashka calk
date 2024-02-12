@@ -23,7 +23,7 @@ public class Calculator {
     public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите перше число: ");
+        System.out.print("Введите первое число: ");
         double number1 = scanner.nextInt();
 
         System.out.print("Введите второе число: ");
