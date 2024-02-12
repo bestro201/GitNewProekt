@@ -23,13 +23,13 @@ public class Calculator {
     public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введіть перше число: ");
+        System.out.print("Введите перше число: ");
         double number1 = scanner.nextInt();
 
-        System.out.print("Введіть друге число: ");
+        System.out.print("Введите второе число: ");
         double number2 = scanner.nextInt();
 
-        System.out.print("Введіть операцію (+, -, *, /): ");
+        System.out.print("Введите действие (+, -, *, /): ");
         String operation = scanner.next();
 
        double result;
