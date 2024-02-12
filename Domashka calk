@@ -47,7 +47,7 @@ public class Calculator {
              result = divide(number1, number2);
                 break;
             default:
-                System.out.println("Невідома операція");
+                System.out.println("Неизвестная операция");
                 return;
         }
 
